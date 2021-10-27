@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Nunito', sans-serif;
+	font-size: 28px;
+	color: #222;
+}
+
+.searchTop{
+	margin-bottom: 10px;
+}
+
+.searchTop button{
+	background-color: white;
+	border: 0px;
+}
+
+.searchTop input{
+	border: 0px;
+}
+.navbar{
+	background-color: #BF3330 !important;
+}
+
+.navbar li a {
+    color: white !important;
+    text-align: center;
+}
+.navbar li a:hover {
+    background-color: #A66F00 !important;
+}
+
+.carousel-inner img {
+	width: 100%;
+}
+.carousel-caption {
+	position: absolute;
+	top: 70%;
+	left: 40%;
+}
+.carousel-caption .btn{
+	border: 2px solid #FFC600;
+	color: #FFC600;
+}
+
+.carousel-caption .btn:hover{
+	color: white;
+	background-color: #FFC600;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border-style: double;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.imageBanner {
+  position: relative;
+}
+
+.imageBanner .btn {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #FFA540;
+}
+
+.imageBanner .btn:hover {
+  background-color: #FFA540;
+  color: black;
+}
+
+.btnBrand{
+	transition: all 0.3s linear;
+}
+
+.btnBrand:hover{
+	transform: translateY(-5px); 
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;}
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg);
+	 background-color: #A66F00;}
+}
+
+/*Media Query*/
+@media (max-width: 992px){
+	.carousel-caption {
+		top: 62%;
+	}
+	.carousel-caption .btn{	
+		border: 1px solid #FFC600;	
+		font-size: 35%;		
+	}
+}
+@media (max-width: 768px){	
+	.carousel-caption {
+		top: 60%;
+		left: 60%;
+	}
+	.carousel-caption .btn{	
+		border: 1px solid #FFC600;		
+		font-size: 50%;
+		padding: 8px 14px;
+	}
+}
+@media (max-width: 576px){
+	.carousel-caption {
+		top: 60%;
+		left: 70%;
+	}
+	.carousel-caption .btn {		
+		font-size: 40%;
+		padding: 4px 8px;
+	}	
+}

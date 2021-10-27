@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflick Browser</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/css/browser.css">
+    <link rel="shortcut icon" href="/images/favicon-icon.png">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 nopadding nav-header">
+                <nav class="navigation">
+                    <a href="#" class="logo">
+                        <img src="/images/Netflix_logo.png" width="100px" height="auto" alt="">
+                    </a>
+
+                    <div class="sub-nav d-lg-none">
+                        <a class="toggle-button" href="#">
+                            Duyệt tìm <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="sub-nav-content">
+                            <div class="caret-up">
+                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li class="active"><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Phim T.hình</a></li>
+                                    <li><a href="#">Phim</a></li>
+                                    <li><a href="#">Mới Nhất</a></li>
+                                    <li><a href="#">Danh sách của tôi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <ul class="d-none d-lg-block">
+                        <li class="active"><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Phim T.hình</a></li>
+                        <li><a href="#">Phim</a></li>
+                        <li><a href="#">Mới Nhất</a></li>
+                        <li><a href="#">Danh sách của tôi</a></li>
+                    </ul>
+                    <div class="toolbar ml-auto">
+                        <a href="#" class="d-none d-sm-block"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
+                        <div class="notification-sub-menu">
+                            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                            <div class="notification-menu-content">
+                                <div class="caret-up">
+                                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="item-notification">
+                                        <a href="#">
+                                            <img src="/images/test-item-notification.jpg" width="112px" height="63px"
+                                                alt="img-notification">
+                                            <div class="notification">
+                                                <h6>Type Notification</h6>
+                                                <h6>Title Notification</h6>
+                                                <p>Time</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-notification">
+                                        <a href="#">
+                                            <img src="/images/test-item-notification.jpg" width="112px" height="63px"
+                                                alt="img-notification">
+                                            <div class="notification">
+                                                <h6>Type Notification</h6>
+                                                <h6>Title Notification</h6>
+                                                <p>Time</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-notification">
+                                        <a href="#">
+                                            <img src="/images/test-item-notification.jpg" width="112px" height="63px"
+                                                alt="img-notification">
+                                            <div class="notification">
+                                                <h6>Type Notification</h6>
+                                                <h6>Title Notification</h6>
+                                                <p>Time</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-notification">
+                                        <a href="#">
+                                            <img src="/images/test-item-notification.jpg" width="112px" height="63px"
+                                                alt="img-notification">
+                                            <div class="notification">
+                                                <h6>Type Notification</h6>
+                                                <h6>Title Notification</h6>
+                                                <p>Time</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-notification">
+                                        <a href="#">
+                                            <img src="/images/test-item-notification.jpg" width="112px" height="63px"
+                                                alt="img-notification">
+                                            <div class="notification">
+                                                <h6>Type Notification</h6>
+                                                <h6>Title Notification</h6>
+                                                <p>Time</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-notification">
+                                        <a href="#">
+                                            <img src="/images/test-item-notification.jpg" width="112px" height="63px"
+                                                alt="img-notification">
+                                            <div class="notification">
+                                                <h6>Type Notification</h6>
+                                                <h6>Title Notification</h6>
+                                                <p>Time</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-sub-menu">
+                            <a class="account-button" href="#">
+                                <img src="/images/account-red.png" alt="my-account" height="40px" width="auto">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="account-menu-content">
+                                <div class="caret-up">
+                                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="item-account">
+                                        <a href="#">
+                                            <img src="/images/account-blue.png" alt="other-account">
+                                            Other Account 1
+                                        </a>
+                                    </div>
+                                    <div class="item-account">
+                                        <a href="#">
+                                            <img src="/images/account-gray.png" alt="other-account">
+                                            Other Account 1
+                                        </a>
+                                    </div>
+                                    <div class="item-account">
+                                        <a href="#">
+                                            <img src="/images/account-yellow.png" alt="other-account">
+                                            Other Account 1
+                                        </a>
+                                    </div>
+                                    <div class="item-account">
+                                        <a href="#">
+                                            <img src="/images/account-green.png" alt="other-account">
+                                            Other Account 1
+                                        </a>
+                                    </div>
+                                    <div class="item-account">
+                                        <a href="#">Quản lý hồ sơ</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="item-account text-bolding nopadding">
+                                        <a href="#">Tài khoản</a>
+                                    </div>
+                                    <div class="item-account text-bolding nopadding">
+                                        <a href="#">Trung tâm trợ giúp</a>
+                                    </div>
+                                    <div class="item-account text-bolding nopadding">
+                                        <a href="#">Đăng xuất khỏi Netflick</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 nopadding banner-1">
+                <div class="image-banner-1">
+                    <img src="/images/banner-2.webp" width="100%" height="100%" alt="banner-2">
+                </div>
+                <div class="info">
+                    <img src="/images/logo-banner-2.webp" alt="logo-banner-2">
+                    <h1>Supplemental message</h1>
+                    <h1>episode title container episode title container episode title container episode title container
+                    </h1>
+                    <div class="button-interact">
+                        <button class="play-button"><i class="fa fa-play" aria-hidden="true"></i> Phát</button>
+                        <button class="more-info-button"><i class="fa fa-info-circle" aria-hidden="true"></i> Thông tin
+                            khác</button>
+                    </div>
+                </div>
+
+                <div class="muturity-rating">
+                    <a class="btn-muted"><i class="fas fa-volume-off"></i></a>
+                    <a class="btn-sound"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+                    <a class="btn-replay"><i class="fas fa-undo"></i></a>
+                    <div class="text-covering">
+                        <h3>18+</h3>
+                    </div>
+                </div>
+
+                <div class="video-trailer-banner-1">
+                    <video id="vid" width="100%" height="auto" autoplay style="display: block;">
+                        <source src="/videos/Ad-Netflick.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="col-12 nopadding my-list-slider">
+                <h1>Danh sách của tôi</h1>
+                <div class="list-movies-items">
+                    <div class="movies-items">
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-1.jpg" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-2.jpg" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-3.webp" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-4.webp" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-5.jpg" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-6.jpg" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-7.jpg" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-8.webp" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-9.jpg" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <img src="/images/movies/movie-10.webp" alt="Movie-item" height="150px" width="265px">
+                                <video height="150px" width="265px">
+                                    <source src="/videos/videoplayback.mp4">
+                                </video>
+                                <a href="#" class="play-item">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="name-item">
+                                    Movie Name
+                                </a>
+                                <a href="#" class="description-item">
+                                    Movie Description
+                                </a>
+                                <a href="#" class="btn-more">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-volumn-up">
+                                    <i class="fas fa-volume-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-like">
+                                    <i class="far fa-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-dislike">
+                                    <i class="far fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="side-btn btn-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="left-arrow"><i class="fas fa-angle-left"></i></a>
+                    <a href="#" class="right-arrow"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-12 banner-2">
+                <div class="gradient"></div>
+                <div class="content">
+                    <div class="col-7 video-trailer">
+                        <img src="/images/foreground-banner-3.webp" height="auto" width="100%" alt="foreground banner 3">
+                    </div>
+                    <div class="col-5 info">
+                        <img src="/images/logo-banner-3.webp" height="auto" width="auto" alt="logo banner 3" class="col-10">
+                        <div class="col-12 btn-interactive">
+                            <a href="#" class="col-4 btn-play"><i class="fas fa-play"></i> Phát</a>
+                            <a href="#" class="col-7 btn-more"><i class="fas fa-info-circle"></i> Thông tin khác</a>
+                        </div>
+                        <p class="col-12">Qua còn mơ sở hữu xe tải hàng ăn, nay đã là hi vọng cuối của nhân loại. Anh là Kẻ được chọn, là sát thủ cuối trong phái.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 footer">
+                <div class="container">
+                    <div class="btn-group-social">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="link-group">
+                        <div class="row">
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Âm thanh và phụ đề</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Mô tả âm thanh</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Trung tâm trợ giúp</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Thẻ quà tặng</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Trung tâm đa phương tiện</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Quan hệ với nhà đầu tư</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Việc làm</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Điều khoản sử dụng</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Quyền riêng tư</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Thông báo pháp lý</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Tùy chọn cookie</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Thông tin doanh nghiệp</a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6 col-6">Liên hệ với chúng tôi</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-service-code">Mã dịch vụ</a>
+                    <p>&copy; 1997-2020 Netflix, Inc {h-jdfvbdbksjdb38}</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+<script src="js/browser.js"></script>
+
+</html>

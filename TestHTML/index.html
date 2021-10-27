@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<title>New page</title>
+</head>
+
+<body style="background-color: #f2f2f2;">
+<ul id="menu" style="background-color: white">
+  	<li><button class="logo_button">Logo</button></li>
+  	<li><button class="btn_justify"><i class="fa fa-align-justify"></i></button></li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-link"></span>
+  			Control Center
+  		</a>
+  	</li>
+	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-paperclip"></span>
+  			Tag Management
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-sitemap"></span>
+  			Site Management
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-globe"></span>
+  			Domain Management
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-paperclip"></span>
+  			Route Management
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-file-text-o"></span>
+  			Disater Tolerance Record
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-bar-chart-o"></span>
+  			QPS Record
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-user-o"></span>
+  			Account Management
+  		</a>
+  	</li>
+  	<li>
+  		<a class="nav_item" href="#">
+  			<span class="fa fa-folder-o"></span>
+  			API Management
+  		</a>
+  	</li>
+  	<li>
+  		<a style="color: gray; border: 0px; text-decoration: none; padding: 4px;" href="#">
+  			<span class="fa fa-commenting-o"></span>
+  		</a>
+  	</li>
+  	<li>
+  		<button style="color: gray; background-color: white; border: 0px;">
+            abc.xyz.uio
+            <span class="fa fa-caret-down"></span>
+        </button>
+  	</li>
+</ul> 
+
+<div class="container-fluid">
+<div class="row d-flex" style="column-gap: 20px; grid-column-gap: 20px;">
+	<div class="col-lg-4 round_content_items">
+		<table style="width:100%">
+			<tr>
+    			<th>Server Map</th>
+    			<th style="width: 150px">
+    				<select class="form-control form-control-sm">
+                      <option>Last 30 days</option>
+                      <option>Statistics</option>
+                      <option>Analyze</option>
+                    </select></th>
+    		</tr>
+		</table>
+
+		<ul style="text-align: left; font-size: 15px; list-style-type:none;">
+			<li>
+				<span style="background-color:#3eb642;width:10px;height:10px; border-radius: 40%; float: left; margin-top: 5px; margin-right: 5px;-"></span>
+				American high defense node-CF <br>(42%)
+			</li>
+			<li>
+				<span style="background-color:#319734;width:10px;height:10px; border-radius: 40%; float: left; margin-top: 5px; margin-right: 5px;-"></span>
+				US VU provider-jp1 <br>(33%)
+			</li>
+			<li>
+				<span style="background-color:#4cda50;width:10px;height:10px; border-radius: 40%; float: left; margin-top: 5px; margin-right: 5px;-"></span>
+				XX Network Technology Co., Ltd.-HK1 <br>(24%)
+			</li>
+		</ul>
+
+		<!-- <canvas id="myCanvas1" style="margin-top: 50px; margin-bottom: 50px;"></canvas> -->
+		<div id="piechart" style="width: auto; height: 400px;"></div>
+	</div>
+	<div class="col-lg-4 round_content_items">
+		<table style="width:100%">
+			<tr>
+    			<th>Regional distribution map and list (listed by number of visits in the list)</th>
+    			<th style="width: 150px">
+    				<select class="form-control form-control-sm">
+                      <option>Last 30 days</option>
+                      <option>Statistics</option>
+                      <option>Analyze</option>
+                    </select></th>
+    		</tr>
+		</table>
+		<!-- <canvas id="myCanvas2" style="margin-top: 50px; margin-bottom: 50px;"></canvas> -->
+		<div id="piechart_2" style="width: auto; height: 400px;"></div>
+
+		<div class="panel-group" id="accordion">
+   			<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; font-size: 14px; text-decoration: none;">LAN, traffic: 7</a>
+       				</p>
+      			</div>
+      			<div id="collapse1" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Cras justo odio</li>
+         				<li class="list-group-item">Dapibus ac facilisis in</li>
+          				<li class="list-group-item">Morbi leo risus</li>
+          				<li class="list-group-item">Porta ac consectetur ac</li>
+          				<li class="list-group-item">Vestibulum at eros</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; font-size: 14px; text-decoration: none;">China, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse2" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit,</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; font-size: 14px; text-decoration: none;">US, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse3" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; font-size: 14px; text-decoration: none;">US, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse4" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; font-size: 14px; text-decoration: none;">US, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse5" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.</li>
+        			</ul>
+      			</div>
+    		</div>
+
+  		</div>
+
+	</div>
+	<div class="col-lg-4 round_content_items">
+		<table style="width: 100%;">
+			<tr>
+    			<th>Operator map</th>
+    			<th style="width: 150px">
+    				<select class="form-control form-control-sm">
+                      <option>Last 30 days</option>
+                      <option>Statistics</option>
+                      <option>Analyze</option>
+                    </select></th>
+    		</tr>
+		</table>
+		<!-- <canvas id="myCanvas3" style="margin-top: 50px; margin-bottom: 50px;"></canvas> -->
+		<div id="piechart_3" style="width: auto; height: 400px;"></div>
+
+		<div class="panel-group" id="accordion2">
+   			<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" style="font-weight: bold; font-size: 14px; text-decoration: none;">LAN, traffic: 7</a>
+       				</p>
+      			</div>
+      			<div id="collapse6" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">
+          					<a data-toggle="collapse" data-parent="#collapse6" href="#collapse6_1" style="font-size: 14px; text-decoration: none;">
+          						LAN, traffic: 7
+          					</a>
+          					<div id="collapse6_1" class="panel-collapse collapse">
+          						Anim pariatur cliche reprehenderit,
+          					</div>
+          				</li>
+         				<li class="list-group-item">
+         					<a data-toggle="collapse" data-parent="#collapse6" href="#collapse6_2" style="font-size: 14px; text-decoration: none;">
+          						China, traffic: 17
+          					</a>
+          					<div id="collapse6_2" class="panel-collapse collapse">
+          						Anim pariatur cliche reprehenderit,
+          					</div>
+         				</li>
+          				<li class="list-group-item">
+          					<a data-toggle="collapse" data-parent="#collapse6" href="#collapse6_3" style="font-size: 14px; text-decoration: none;">
+          						US, traffic: 17
+          					</a>
+          					<div id="collapse6_3" class="panel-collapse collapse">
+          						Anim pariatur cliche reprehenderit,
+          					</div>
+          				</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" style="font-weight: bold; font-size: 14px; text-decoration: none;">China, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse7" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit,</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse8" style="font-weight: bold; font-size: 14px; text-decoration: none;">US, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse8" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse9" style="font-weight: bold; font-size: 14px; text-decoration: none;">US, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse9" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.</li>
+        			</ul>
+      			</div>
+    		</div>
+
+    		<div class="panel panel-default" style="margin-bottom: -5px;">
+      			<div class="panel-heading">
+        			<p class="panel-title">
+          				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse10" style="font-weight: bold; font-size: 14px; text-decoration: none;">US, traffic: 17</a>
+       				</p>
+      			</div>
+      			<div id="collapse10" class="panel-collapse collapse">
+        			<ul class="list-group">
+          				<li class="list-group-item">Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.</li>
+        			</ul>
+      			</div>
+    		</div>
+  		</div>
+
+	</div>
+</div>
+</div>
+<footer>
+	<hr>
+	<p style="color: gray; text-align: center; margin-top: 50px;">Copyright DNS, All Rights Reserved ICP No. 188882 Public Security Equipment 88888</p>
+</footer>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Name', 'Value'],
+          ['American high defense node-CF',     7],
+          ['US VU provider-jp1',      8],
+          ['XX Network Technology Co., Ltd.-HK1',  2]
+        ]);
+        var data_2 = google.visualization.arrayToDataTable([
+          ['Name', 'Value'],
+          ['American high defense node-CF',     10],
+          ['US VU provider-jp1',      4],
+          ['XX Network Technology Co., Ltd.-HK1',  8]
+        ]);
+        var data_3 = google.visualization.arrayToDataTable([
+          ['Name', 'Value'],
+          ['American high defense node-CF',     6],
+          ['US VU provider-jp1',      9],
+          ['XX Network Technology Co., Ltd.-HK1',  10]
+        ]);
+
+        var options = {
+          title: '',
+          colors: ['#3eb642', '#319734', '#4cda50'],
+          is3D: true,
+          legend: 'none',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart_2 = new google.visualization.PieChart(document.getElementById('piechart_2'));
+		var chart_3 = new google.visualization.PieChart(document.getElementById('piechart_3'));
+
+        chart.draw(data, options);
+        chart_2.draw(data_2, options);
+        chart_3.draw(data_3, options);
+      }
+</script>
+</body>
+</html>

@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container abc">
+    
+    <div class="dropdown">
+        <button class="btn">
+            Dropdown 1
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn">
+            Dropdown 2
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn">
+            Dropdown 3
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+            <li><a href="#">aaaaaaaaaaaa</a></li>
+        </ul>
+    </div>
+
+    <form action="#">
+        <select name="year">
+            
+        </select>
+    </form>
+
+    <form action="#">
+        <select name="country">
+            
+        </select>
+    </form>
+
+    <table class="wikitable sortable mw-collapsible jquery-tablesorter mw-made-collapsible">
+
+        <thead><tr>
+        <th width="1%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Stt
+        </th>
+        <th width="14%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Tên tỉnh,<br>thành phố
+        </th>
+        <th width="17%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Tỉnh lỵ<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup>
+        </th>
+        <th width="15%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Khu vực<br>
+        </th>
+        <th width="8%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Dân số<br>(người)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup>
+        </th>
+        <th width="8%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Diện tích<br>(km²)<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup>
+        </th>
+        <th width="8%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Mật độ<br>(người/km<sup>2</sup>)
+        </th>
+        <th width="12%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">H.chính<br>cấp Huyện
+        </th>
+        <th width="1%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần">Biển số xe
+        </th>
+        <th width="1%" class="headerSort" tabindex="0" role="columnheader button" title="Sắp xếp tăng dần"><span class="mw-collapsible-toggle mw-collapsible-toggle-default" role="button" tabindex="0" aria-expanded="true"><a class="mw-collapsible-text">ẩn</a></span>Mã vùng ĐT
+        </th></tr></thead><tbody>
+        <tr>
+        <td><center> 1
+        </center></td>
+        <td><center> <a href="/wiki/An_Giang" title="An Giang">An Giang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Long_Xuy%C3%AAn" title="Long Xuyên">Long Xuyên</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.908.352
+        </center></td>
+        <td><center> 3.536,7
+        </center></td>
+        <td><center> 540
+        </center></td>
+        <td><center> 11<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup>
+        </center></td>
+        <td><center> 67
+        </center></td>
+        <td><center> 0296
+        </center></td></tr>
+        <tr>
+        <td><center> 2
+        </center></td>
+        <td><center> <a href="/wiki/B%C3%A0_R%E1%BB%8Ba_-_V%C5%A9ng_T%C3%A0u" title="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/B%C3%A0_R%E1%BB%8Ba" title="Bà Rịa">Bà Rịa</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Đông Nam Bộ (Việt Nam)">Đông Nam Bộ</a>
+        </center></td>
+        <td><center> 1.148.313
+        </center></td>
+        <td><center> 1.980,8
+        </center></td>
+        <td><center> 580
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 72
+        </center></td>
+        <td><center> 0254
+        </center></td></tr>
+        <tr>
+        <td><center> 3
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%A1c_Li%C3%AAu" title="Bạc Liêu">Bạc Liêu</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/B%E1%BA%A1c_Li%C3%AAu_(th%C3%A0nh_ph%E1%BB%91)" title="Bạc Liêu (thành phố)">Bạc Liêu</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 907.236
+        </center></td>
+        <td><center> 2.669
+        </center></td>
+        <td><center> 340
+        </center></td>
+        <td><center> 7
+        </center></td>
+        <td><center> 94
+        </center></td>
+        <td><center> 0291
+        </center></td></tr>
+        <tr>
+        <td><center> 4
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_Giang" title="Bắc Giang">Bắc Giang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/B%E1%BA%AFc_Giang_(th%C3%A0nh_ph%E1%BB%91)" title="Bắc Giang (thành phố)">Bắc Giang</a>
+        </center></td>
+        <td rowspan="2"><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 1.803.950
+        </center></td>
+        <td><center> 3.851,4
+        </center></td>
+        <td><center> 468
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 13 và 98
+        </center></td>
+        <td><center> 0204
+        </center></td></tr>
+        <tr>
+        <td><center> 5
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_K%E1%BA%A1n" title="Bắc Kạn">Bắc Kạn</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/B%E1%BA%AFc_K%E1%BA%A1n_(th%C3%A0nh_ph%E1%BB%91)" title="Bắc Kạn (thành phố)">Bắc Kạn</a>
+        </center></td>
+        <td><center> 313.905
+        </center></td>
+        <td><center> 4.860
+        </center></td>
+        <td><center> 65
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 97
+        </center></td>
+        <td><center> 0209
+        </center></td></tr>
+        <tr>
+        <td><center> 6
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_Ninh" title="Bắc Ninh">Bắc Ninh</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/B%E1%BA%AFc_Ninh_(th%C3%A0nh_ph%E1%BB%91)" title="Bắc Ninh (thành phố)">Bắc Ninh</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 1.368.840
+        </center></td>
+        <td><center> 822,7
+        </center></td>
+        <td><center> 1.664
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 13 và 99
+        </center></td>
+        <td><center> 0222
+        </center></td></tr>
+        <tr>
+        <td><center> 7
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%BFn_Tre" title="Bến Tre">Bến Tre</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/B%E1%BA%BFn_Tre_(th%C3%A0nh_ph%E1%BB%91)" title="Bến Tre (thành phố)">Bến Tre</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.288.463
+        </center></td>
+        <td><center> 2.394,6
+        </center></td>
+        <td><center> 538
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 71
+        </center></td>
+        <td><center> 0275
+        </center></td></tr>
+        <tr>
+        <td><center> 8
+        </center></td>
+        <td><center> <a href="/wiki/B%C3%ACnh_D%C6%B0%C6%A1ng" title="Bình Dương">Bình Dương</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Th%E1%BB%A7_D%E1%BA%A7u_M%E1%BB%99t" title="Thủ Dầu Một">Thủ Dầu Một</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Đông Nam Bộ (Việt Nam)">Đông Nam Bộ</a>
+        </center></td>
+        <td><center> 2.426.561
+        </center></td>
+        <td><center> 2.694,7
+        </center></td>
+        <td><center> 900
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 61
+        </center></td>
+        <td><center> 0274
+        </center></td></tr>
+        <tr>
+        <td><center> 9
+        </center></td>
+        <td><center> <a href="/wiki/B%C3%ACnh_%C4%90%E1%BB%8Bnh" title="Bình Định">Bình Định</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Quy_Nh%C6%A1n" title="Quy Nhơn">Quy Nhơn</a>
+        </center></td>
+        <td><center> <a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 1.486.918
+        </center></td>
+        <td><center> 6.066,2
+        </center></td>
+        <td><center> 245
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 77
+        </center></td>
+        <td><center> 0256
+        </center></td></tr>
+        <tr>
+        <td><center> 10
+        </center></td>
+        <td><center> <a href="/wiki/B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc" title="Bình Phước">Bình Phước</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/%C4%90%E1%BB%93ng_Xo%C3%A0i" title="Đồng Xoài">Đồng Xoài</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Đông Nam Bộ (Việt Nam)">Đông Nam Bộ</a>
+        </center></td>
+        <td><center> 994.679
+        </center></td>
+        <td><center> 6.877
+        </center></td>
+        <td><center> 145
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 93
+        </center></td>
+        <td><center> 0271
+        </center></td></tr>
+        <tr>
+        <td><center> 11
+        </center></td>
+        <td><center> <a href="/wiki/B%C3%ACnh_Thu%E1%BA%ADn" title="Bình Thuận">Bình Thuận</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Phan_Thi%E1%BA%BFt" title="Phan Thiết">Phan Thiết</a>
+        </center></td>
+        <td><center> <a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 1.230.808
+        </center></td>
+        <td><center> 7.812,8
+        </center></td>
+        <td><center> 158
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 86
+        </center></td>
+        <td><center> 0252
+        </center></td></tr>
+        <tr>
+        <td><center> 12
+        </center></td>
+        <td><center> <a href="/wiki/C%C3%A0_Mau" title="Cà Mau">Cà Mau</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/C%C3%A0_Mau_(th%C3%A0nh_ph%E1%BB%91)" title="Cà Mau (thành phố)">Cà Mau</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.194.476
+        </center></td>
+        <td><center> 5.294,8
+        </center></td>
+        <td><center> 226
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 69
+        </center></td>
+        <td><center> 0290
+        </center></td></tr>
+        <tr>
+        <td><center> 13
+        </center></td>
+        <td><center> <a href="/wiki/Cao_B%E1%BA%B1ng" title="Cao Bằng">Cao Bằng</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Cao_B%E1%BA%B1ng_(th%C3%A0nh_ph%E1%BB%91)" title="Cao Bằng (thành phố)">Cao Bằng</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 530.341
+        </center></td>
+        <td><center> 6.700,3
+        </center></td>
+        <td><center> 79
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 0206
+        </center></td></tr>
+        <tr>
+        <td><center> 14
+        </center></td>
+        <td><center> <b><a href="/wiki/C%E1%BA%A7n_Th%C6%A1" title="Cần Thơ">Cần Thơ</a></b>
+        </center></td>
+        <td><center> Quận <a href="/wiki/Ninh_Ki%E1%BB%81u" title="Ninh Kiều">Ninh Kiều</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.235.171
+        </center></td>
+        <td><center> 1.439,2
+        </center></td>
+        <td><center> 858
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 65
+        </center></td>
+        <td><center> 0292
+        </center></td></tr>
+        <tr>
+        <td><center> 15
+        </center></td>
+        <td><center> <b><a href="/wiki/%C4%90%C3%A0_N%E1%BA%B5ng" title="Đà Nẵng">Đà Nẵng</a></b>
+        </center></td>
+        <td><center> Quận <a href="/wiki/H%E1%BA%A3i_Ch%C3%A2u" title="Hải Châu">Hải Châu</a>
+        </center></td>
+        <td><center> <a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 1.134.310
+        </center></td>
+        <td><center> 1.284,9
+        </center></td>
+        <td><center> 883
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 43
+        </center></td>
+        <td><center> 0236
+        </center></td></tr>
+        <tr>
+        <td><center> 16
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BA%AFk_L%E1%BA%AFk" title="Đắk Lắk">Đắk Lắk</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Bu%C3%B4n_Ma_Thu%E1%BB%99t" title="Buôn Ma Thuột">Buôn Ma Thuột</a>
+        </center></td>
+        <td rowspan="2"><center> <a href="/wiki/T%C3%A2y_Nguy%C3%AAn" title="Tây Nguyên">Tây Nguyên</a>
+        </center></td>
+        <td><center> 1.869.322
+        </center></td>
+        <td><center> 13.030,5
+        </center></td>
+        <td><center> 143
+        </center></td>
+        <td><center> 15
+        </center></td>
+        <td><center> 47
+        </center></td>
+        <td><center> 0262
+        </center></td></tr>
+        <tr>
+        <td><center> 17
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BA%AFk_N%C3%B4ng" title="Đắk Nông">Đắk Nông</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Gia_Ngh%C4%A9a" title="Gia Nghĩa">Gia Nghĩa</a>
+        </center></td>
+        <td><center> 622.168
+        </center></td>
+        <td><center> 6.509,3
+        </center></td>
+        <td><center> 96
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 48
+        </center></td>
+        <td><center> 0261
+        </center></td></tr>
+        <tr>
+        <td><center> 18
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_Nai" title="Đồng Nai">Đồng Nai</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Bi%C3%AAn_H%C3%B2a" title="Biên Hòa">Biên Hòa</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Đông Nam Bộ (Việt Nam)">Đông Nam Bộ</a>
+        </center></td>
+        <td><center> 3.097.107
+        </center></td>
+        <td><center> 5.905,7
+        </center></td>
+        <td><center> 524
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 39 và 60
+        </center></td>
+        <td><center> 0251
+        </center></td></tr>
+        <tr>
+        <td><center> 19
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_Th%C3%A1p" title="Đồng Tháp">Đồng Tháp</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Cao_L%C3%A3nh_(th%C3%A0nh_ph%E1%BB%91)" title="Cao Lãnh (thành phố)">Cao Lãnh</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.599.504
+        </center></td>
+        <td><center> 3.383,8
+        </center></td>
+        <td><center> 473
+        </center></td>
+        <td><center> 12
+        </center></td>
+        <td><center> 66
+        </center></td>
+        <td><center> 0277
+        </center></td></tr>
+        <tr>
+        <td><center> 20
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn" title="Điện Biên">Điện Biên</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7" title="Điện Biên Phủ">Điện Biên Phủ</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_T%C3%A2y_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Tây Bắc (Việt Nam)">Tây Bắc Bộ</a>
+        </center></td>
+        <td><center> 598.856
+        </center></td>
+        <td><center> 9.541
+        </center></td>
+        <td><center> 63
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 27
+        </center></td>
+        <td><center> 0215
+        </center></td></tr>
+        <tr>
+        <td><center> 21
+        </center></td>
+        <td><center> <a href="/wiki/Gia_Lai" title="Gia Lai">Gia Lai</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Pleiku" title="Pleiku">Pleiku</a>
+        </center></td>
+        <td><center> <a href="/wiki/T%C3%A2y_Nguy%C3%AAn" title="Tây Nguyên">Tây Nguyên</a>
+        </center></td>
+        <td><center> 1.513.847
+        </center></td>
+        <td><center> 15.510,8
+        </center></td>
+        <td><center> 98
+        </center></td>
+        <td><center> 17
+        </center></td>
+        <td><center> 81
+        </center></td>
+        <td><center> 0269
+        </center></td></tr>
+        <tr>
+        <td><center> 22
+        </center></td>
+        <td><center> <a href="/wiki/H%C3%A0_Giang" title="Hà Giang">Hà Giang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/H%C3%A0_Giang_(th%C3%A0nh_ph%E1%BB%91)" title="Hà Giang (thành phố)">Hà Giang</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 854.679
+        </center></td>
+        <td><center> 7.929,5
+        </center></td>
+        <td><center> 108
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 23
+        </center></td>
+        <td><center> 0219
+        </center></td></tr>
+        <tr>
+        <td><center> 23
+        </center></td>
+        <td><center> <a href="/wiki/H%C3%A0_Nam" title="Hà Nam">Hà Nam</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Ph%E1%BB%A7_L%C3%BD" title="Phủ Lý">Phủ Lý</a>
+        </center></td>
+        <td rowspan="2"><center><a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 852.800
+        </center></td>
+        <td><center> 860,9
+        </center></td>
+        <td><center> 991
+        </center></td>
+        <td><center> 6
+        </center></td>
+        <td><center> 90
+        </center></td>
+        <td><center> 0226
+        </center></td></tr>
+        <tr>
+        <td><center> 24
+        </center></td>
+        <td><center> <b><a href="/wiki/H%C3%A0_N%E1%BB%99i" title="Hà Nội">Hà Nội</a></b>
+        </center></td>
+        <td><center> Quận <a href="/wiki/Ho%C3%A0n_Ki%E1%BA%BFm" title="Hoàn Kiếm">Hoàn Kiếm</a>
+        </center></td>
+        <td><center> 8.053.663
+        </center></td>
+        <td><center> 3.358,9
+        </center></td>
+        <td><center> 2.398
+        </center></td>
+        <td><center> 30
+        </center></td>
+        <td><center> 29 đến 33 và 40
+        </center></td>
+        <td><center> 024
+        </center></td></tr>
+        <tr>
+        <td><center> 25
+        </center></td>
+        <td><center> <a href="/wiki/H%C3%A0_T%C4%A9nh" title="Hà Tĩnh">Hà Tĩnh</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/H%C3%A0_T%C4%A9nh_(th%C3%A0nh_ph%E1%BB%91)" title="Hà Tĩnh (thành phố)">Hà Tĩnh</a>
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_Trung_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Bắc Trung Bộ (Việt Nam)">Bắc Trung Bộ</a>
+        </center></td>
+        <td><center> 1.288.866
+        </center></td>
+        <td><center> 5.990,7
+        </center></td>
+        <td><center> 215
+        </center></td>
+        <td><center> 13
+        </center></td>
+        <td><center> 38
+        </center></td>
+        <td><center> 0239
+        </center></td></tr>
+        <tr>
+        <td><center> 26
+        </center></td>
+        <td><center> <a href="/wiki/H%E1%BA%A3i_D%C6%B0%C6%A1ng" title="Hải Dương">Hải Dương</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/H%E1%BA%A3i_D%C6%B0%C6%A1ng_(th%C3%A0nh_ph%E1%BB%91)" title="Hải Dương (thành phố)">Hải Dương</a>
+        </center></td>
+        <td rowspan="2"><center><a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 1.705.059
+        </center></td>
+        <td><center> 1.668,2
+        </center></td>
+        <td><center> 1.022
+        </center></td>
+        <td><center> 12
+        </center></td>
+        <td><center> 34
+        </center></td>
+        <td><center> 0220
+        </center></td></tr>
+        <tr>
+        <td><center> 27
+        </center></td>
+        <td><center> <b><a href="/wiki/H%E1%BA%A3i_Ph%C3%B2ng" title="Hải Phòng">Hải Phòng</a></b>
+        </center></td>
+        <td><center> Quận <a href="/wiki/H%E1%BB%93ng_B%C3%A0ng_(qu%E1%BA%ADn)" title="Hồng Bàng (quận)">Hồng Bàng</a>
+        </center></td>
+        <td><center> 1.837.173
+        </center></td>
+        <td><center> 1.561,8
+        </center></td>
+        <td><center> 1.176
+        </center></td>
+        <td><center> 15
+        </center></td>
+        <td><center> 15 và 16
+        </center></td>
+        <td><center> 0225
+        </center></td></tr>
+        <tr>
+        <td><center> 28
+        </center></td>
+        <td><center> <a href="/wiki/H%C3%B2a_B%C3%ACnh" title="Hòa Bình">Hòa Bình</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/H%C3%B2a_B%C3%ACnh_(th%C3%A0nh_ph%E1%BB%91)" title="Hòa Bình (thành phố)">Hòa Bình</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_T%C3%A2y_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Tây Bắc (Việt Nam)">Tây Bắc Bộ</a>
+        </center></td>
+        <td><center> 854.131
+        </center></td>
+        <td><center> 4.591
+        </center></td>
+        <td><center> 186
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 28
+        </center></td>
+        <td><center> 0218
+        </center></td></tr>
+        <tr>
+        <td><center> 29
+        </center></td>
+        <td><center> <a href="/wiki/H%E1%BA%ADu_Giang" title="Hậu Giang">Hậu Giang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/V%E1%BB%8B_Thanh" title="Vị Thanh">Vị Thanh</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 733.017
+        </center></td>
+        <td><center> 1.621,8
+        </center></td>
+        <td><center> 452
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 95
+        </center></td>
+        <td><center> 0293
+        </center></td></tr>
+        <tr>
+        <td><center> 30
+        </center></td>
+        <td><center> <a href="/wiki/H%C6%B0ng_Y%C3%AAn" title="Hưng Yên">Hưng Yên</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/H%C6%B0ng_Y%C3%AAn_(th%C3%A0nh_ph%E1%BB%91)" title="Hưng Yên (thành phố)">Hưng Yên</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 1.252.731
+        </center></td>
+        <td><center> 930,2
+        </center></td>
+        <td><center> 1.347
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 89
+        </center></td>
+        <td><center> 0221
+        </center></td></tr>
+        <tr>
+        <td><center> 31
+        </center></td>
+        <td><center> <b><a href="/wiki/Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh" title="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</a></b>
+        </center></td>
+        <td><center> <a href="/wiki/Qu%E1%BA%ADn_1" title="Quận 1">Quận 1</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Đông Nam Bộ (Việt Nam)">Đông Nam Bộ</a>
+        </center></td>
+        <td><center> 8.993.082
+        </center></td>
+        <td><center> 2.061
+        </center></td>
+        <td><center> 4.363
+        </center></td>
+        <td><center> 24
+        </center></td>
+        <td><center> 50 đến 59 và 41
+        </center></td>
+        <td><center> 028
+        </center></td></tr>
+        <tr>
+        <td><center> 32
+        </center></td>
+        <td><center> <a href="/wiki/Kh%C3%A1nh_H%C3%B2a" title="Khánh Hòa">Khánh Hòa</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Nha_Trang" title="Nha Trang">Nha Trang</a>
+        </center></td>
+        <td><center> <a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 1.231.107
+        </center></td>
+        <td><center> 5.137,8
+        </center></td>
+        <td><center> 240
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 79
+        </center></td>
+        <td><center> 0258
+        </center></td></tr>
+        <tr>
+        <td><center> 33
+        </center></td>
+        <td><center> <a href="/wiki/Ki%C3%AAn_Giang" title="Kiên Giang">Kiên Giang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/R%E1%BA%A1ch_Gi%C3%A1" title="Rạch Giá">Rạch Giá</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.723.067
+        </center></td>
+        <td><center> 6.348,8
+        </center></td>
+        <td><center> 271
+        </center></td>
+        <td><center> 15
+        </center></td>
+        <td><center> 68
+        </center></td>
+        <td><center> 0297
+        </center></td></tr>
+        <tr>
+        <td><center> 34
+        </center></td>
+        <td><center> <a href="/wiki/Kon_Tum" title="Kon Tum">Kon Tum</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Kon_Tum_(th%C3%A0nh_ph%E1%BB%91)" title="Kon Tum (thành phố)">Kon Tum</a>
+        </center></td>
+        <td><center> <a href="/wiki/T%C3%A2y_Nguy%C3%AAn" title="Tây Nguyên">Tây Nguyên</a>
+        </center></td>
+        <td><center> 540.438
+        </center></td>
+        <td><center> 9.674,2
+        </center></td>
+        <td><center> 56
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 82
+        </center></td>
+        <td><center> 0260
+        </center></td></tr>
+        <tr>
+        <td><center> 35
+        </center></td>
+        <td><center> <a href="/wiki/Lai_Ch%C3%A2u" title="Lai Châu">Lai Châu</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Lai_Ch%C3%A2u_(th%C3%A0nh_ph%E1%BB%91)" title="Lai Châu (thành phố)">Lai Châu</a>
+        </center></td>
+        <td rowspan="2"><center><a href="/wiki/V%C3%B9ng_T%C3%A2y_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Tây Bắc (Việt Nam)">Tây Bắc Bộ</a>
+        </center></td>
+        <td><center> 460.196
+        </center></td>
+        <td><center> 9.068,8
+        </center></td>
+        <td><center> 51
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 25
+        </center></td>
+        <td><center> 0213
+        </center></td></tr>
+        <tr>
+        <td><center> 36
+        </center></td>
+        <td><center> <a href="/wiki/L%C3%A0o_Cai" title="Lào Cai">Lào Cai</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/L%C3%A0o_Cai_(th%C3%A0nh_ph%E1%BB%91)" title="Lào Cai (thành phố)">Lào Cai</a>
+        </center></td>
+        <td><center> 730.420
+        </center></td>
+        <td><center> 6.364
+        </center></td>
+        <td><center> 115
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 24
+        </center></td>
+        <td><center> 0214
+        </center></td></tr>
+        <tr>
+        <td><center> 37
+        </center></td>
+        <td><center> <a href="/wiki/L%E1%BA%A1ng_S%C6%A1n" title="Lạng Sơn">Lạng Sơn</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/L%E1%BA%A1ng_S%C6%A1n_(th%C3%A0nh_ph%E1%BB%91)" title="Lạng Sơn (thành phố)">Lạng Sơn</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 781.655
+        </center></td>
+        <td><center> 8.310,2
+        </center></td>
+        <td><center> 94
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 12
+        </center></td>
+        <td><center> 0205
+        </center></td></tr>
+        <tr>
+        <td><center> 38
+        </center></td>
+        <td><center> <a href="/wiki/L%C3%A2m_%C4%90%E1%BB%93ng" title="Lâm Đồng">Lâm Đồng</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/%C4%90%C3%A0_L%E1%BA%A1t" title="Đà Lạt">Đà Lạt</a>
+        </center></td>
+        <td><center> <a href="/wiki/T%C3%A2y_Nguy%C3%AAn" title="Tây Nguyên">Tây Nguyên</a>
+        </center></td>
+        <td><center> 1.296.606
+        </center></td>
+        <td><center> 9.783,2
+        </center></td>
+        <td><center> 133
+        </center></td>
+        <td><center> 12
+        </center></td>
+        <td><center> 49
+        </center></td>
+        <td><center> 0263
+        </center></td></tr>
+        <tr>
+        <td><center> 39
+        </center></td>
+        <td><center> <a href="/wiki/Long_An" title="Long An">Long An</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/T%C3%A2n_An" title="Tân An">Tân An</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.688.547
+        </center></td>
+        <td><center> 4.490,2
+        </center></td>
+        <td><center> 376
+        </center></td>
+        <td><center> 15
+        </center></td>
+        <td><center> 62
+        </center></td>
+        <td><center> 0272
+        </center></td></tr>
+        <tr>
+        <td><center> 40
+        </center></td>
+        <td><center> <a href="/wiki/Nam_%C4%90%E1%BB%8Bnh" title="Nam Định">Nam Định</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Nam_%C4%90%E1%BB%8Bnh_(th%C3%A0nh_ph%E1%BB%91)" title="Nam Định (thành phố)">Nam Định</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 1.780.393
+        </center></td>
+        <td><center> 1.668
+        </center></td>
+        <td><center> 1.067
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 18
+        </center></td>
+        <td><center> 0228
+        </center></td></tr>
+        <tr>
+        <td><center> 41
+        </center></td>
+        <td><center> <a href="/wiki/Ngh%E1%BB%87_An" title="Nghệ An">Nghệ An</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Vinh" title="Vinh">Vinh</a>
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_Trung_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Bắc Trung Bộ (Việt Nam)">Bắc Trung Bộ</a>
+        </center></td>
+        <td><center> 3.327.791
+        </center></td>
+        <td><center> 16.493,7
+        </center></td>
+        <td><center> 202
+        </center></td>
+        <td><center> 21
+        </center></td>
+        <td><center> 37
+        </center></td>
+        <td><center> 0238
+        </center></td></tr>
+        <tr>
+        <td><center> 42
+        </center></td>
+        <td><center> <a href="/wiki/Ninh_B%C3%ACnh" title="Ninh Bình">Ninh Bình</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Ninh_B%C3%ACnh_(th%C3%A0nh_ph%E1%BB%91)" title="Ninh Bình (thành phố)">Ninh Bình</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 982.487
+        </center></td>
+        <td><center> 1.387
+        </center></td>
+        <td><center> 708
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 35
+        </center></td>
+        <td><center> 0229
+        </center></td></tr>
+        <tr>
+        <td><center> 43
+        </center></td>
+        <td><center> <a href="/wiki/Ninh_Thu%E1%BA%ADn" title="Ninh Thuận">Ninh Thuận</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Phan_Rang_-_Th%C3%A1p_Ch%C3%A0m" title="Phan Rang - Tháp Chàm">Phan Rang - Tháp Chàm</a>
+        </center></td>
+        <td><center> <a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 590.467
+        </center></td>
+        <td><center> 3.355,3
+        </center></td>
+        <td><center> 176
+        </center></td>
+        <td><center> 7
+        </center></td>
+        <td><center> 85
+        </center></td>
+        <td><center> 0259
+        </center></td></tr>
+        <tr>
+        <td><center> 44
+        </center></td>
+        <td><center> <a href="/wiki/Ph%C3%BA_Th%E1%BB%8D" title="Phú Thọ">Phú Thọ</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Vi%E1%BB%87t_Tr%C3%AC" title="Việt Trì">Việt Trì</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 1.463.726
+        </center></td>
+        <td><center> 3.534,6
+        </center></td>
+        <td><center> 414
+        </center></td>
+        <td><center> 13
+        </center></td>
+        <td><center> 19
+        </center></td>
+        <td><center> 0210
+        </center></td></tr>
+        <tr>
+        <td><center> 45
+        </center></td>
+        <td><center> <a href="/wiki/Ph%C3%BA_Y%C3%AAn" title="Phú Yên">Phú Yên</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Tuy_H%C3%B2a" title="Tuy Hòa">Tuy Hòa</a>
+        </center></td>
+        <td><center> <a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 961.152
+        </center></td>
+        <td><center> 5.023,4
+        </center></td>
+        <td><center> 191
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 78
+        </center></td>
+        <td><center> 257
+        </center></td></tr>
+        <tr>
+        <td><center> 46
+        </center></td>
+        <td><center> <a href="/wiki/Qu%E1%BA%A3ng_B%C3%ACnh" title="Quảng Bình">Quảng Bình</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/%C4%90%E1%BB%93ng_H%E1%BB%9Bi" title="Đồng Hới">Đồng Hới</a>
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_Trung_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Bắc Trung Bộ (Việt Nam)">Bắc Trung Bộ</a>
+        </center></td>
+        <td><center> 895.430
+        </center></td>
+        <td><center> 8.065,3
+        </center></td>
+        <td><center> 111
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 73
+        </center></td>
+        <td><center> 0232
+        </center></td></tr>
+        <tr>
+        <td><center> 47
+        </center></td>
+        <td><center> <a href="/wiki/Qu%E1%BA%A3ng_Nam" title="Quảng Nam">Quảng Nam</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Tam_K%E1%BB%B3" title="Tam Kỳ">Tam Kỳ</a>
+        </center></td>
+        <td rowspan="2"><center><a href="/wiki/Duy%C3%AAn_h%E1%BA%A3i_Nam_Trung_B%E1%BB%99" title="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</a>
+        </center></td>
+        <td><center> 1.495.812
+        </center></td>
+        <td><center> 10.574,7
+        </center></td>
+        <td><center> 141
+        </center></td>
+        <td><center> 18
+        </center></td>
+        <td><center> 92
+        </center></td>
+        <td><center> 0235
+        </center></td></tr>
+        <tr>
+        <td><center> 48
+        </center></td>
+        <td><center> <a href="/wiki/Qu%E1%BA%A3ng_Ng%C3%A3i" title="Quảng Ngãi">Quảng Ngãi</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Qu%E1%BA%A3ng_Ng%C3%A3i_(th%C3%A0nh_ph%E1%BB%91)" title="Quảng Ngãi (thành phố)">Quảng Ngãi</a>
+        </center></td>
+        <td><center> 1.231.697
+        </center></td>
+        <td><center> 5.135,2
+        </center></td>
+        <td><center> 240
+        </center></td>
+        <td><center> 13
+        </center></td>
+        <td><center> 76
+        </center></td>
+        <td><center> 0255
+        </center></td></tr>
+        <tr>
+        <td><center> 49
+        </center></td>
+        <td><center> <a href="/wiki/Qu%E1%BA%A3ng_Ninh" title="Quảng Ninh">Quảng Ninh</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/H%E1%BA%A1_Long" title="Hạ Long">Hạ Long</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 1.320.324
+        </center></td>
+        <td><center> 6.177,7
+        </center></td>
+        <td><center> 214
+        </center></td>
+        <td><center> 13
+        </center></td>
+        <td><center> 14
+        </center></td>
+        <td><center> 0203
+        </center></td></tr>
+        <tr>
+        <td><center> 50
+        </center></td>
+        <td><center> <a href="/wiki/Qu%E1%BA%A3ng_Tr%E1%BB%8B" title="Quảng Trị">Quảng Trị</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/%C4%90%C3%B4ng_H%C3%A0" title="Đông Hà">Đông Hà</a>
+        </center></td>
+        <td><center> <a href="/wiki/B%E1%BA%AFc_Trung_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Bắc Trung Bộ (Việt Nam)">Bắc Trung Bộ</a>
+        </center></td>
+        <td><center> 632.375
+        </center></td>
+        <td><center> 4.739,8
+        </center></td>
+        <td><center> 133
+        </center></td>
+        <td><center> 10
+        </center></td>
+        <td><center> 74
+        </center></td>
+        <td><center> 0233
+        </center></td></tr>
+        <tr>
+        <td><center> 51
+        </center></td>
+        <td><center> <a href="/wiki/S%C3%B3c_Tr%C4%83ng" title="Sóc Trăng">Sóc Trăng</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/S%C3%B3c_Tr%C4%83ng_(th%C3%A0nh_ph%E1%BB%91)" title="Sóc Trăng (thành phố)">Sóc Trăng</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.199.653
+        </center></td>
+        <td><center> 3.311,8
+        </center></td>
+        <td><center> 362
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 83
+        </center></td>
+        <td><center> 0299
+        </center></td></tr>
+        <tr>
+        <td><center> 52
+        </center></td>
+        <td><center> <a href="/wiki/S%C6%A1n_La" title="Sơn La">Sơn La</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/S%C6%A1n_La_(th%C3%A0nh_ph%E1%BB%91)" title="Sơn La (thành phố)">Sơn La</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_T%C3%A2y_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Tây Bắc (Việt Nam)">Tây Bắc Bộ</a>
+        </center></td>
+        <td><center> 1.248.415
+        </center></td>
+        <td><center> 14.123,5
+        </center></td>
+        <td><center> 88
+        </center></td>
+        <td><center> 12
+        </center></td>
+        <td><center> 26
+        </center></td>
+        <td><center> 0212
+        </center></td></tr>
+        <tr>
+        <td><center> 53
+        </center></td>
+        <td><center> <a href="/wiki/T%C3%A2y_Ninh" title="Tây Ninh">Tây Ninh</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/T%C3%A2y_Ninh_(th%C3%A0nh_ph%E1%BB%91)" title="Tây Ninh (thành phố)">Tây Ninh</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Đông Nam Bộ (Việt Nam)">Đông Nam Bộ</a>
+        </center></td>
+        <td><center> 1.169.165
+        </center></td>
+        <td><center> 4.041,4
+        </center></td>
+        <td><center> 289
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 70
+        </center></td>
+        <td><center> 0276
+        </center></td></tr>
+        <tr>
+        <td><center> 54
+        </center></td>
+        <td><center> <a href="/wiki/Th%C3%A1i_B%C3%ACnh" title="Thái Bình">Thái Bình</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Th%C3%A1i_B%C3%ACnh_(th%C3%A0nh_ph%E1%BB%91)" title="Thái Bình (thành phố)">Thái Bình</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 1.860.447
+        </center></td>
+        <td><center> 1.570,5
+        </center></td>
+        <td><center> 1.185
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 17
+        </center></td>
+        <td><center> 0227
+        </center></td></tr>
+        <tr>
+        <td><center> 55
+        </center></td>
+        <td><center> <a href="/wiki/Th%C3%A1i_Nguy%C3%AAn" title="Thái Nguyên">Thái Nguyên</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Th%C3%A1i_Nguy%C3%AAn_(th%C3%A0nh_ph%E1%BB%91)" title="Thái Nguyên (thành phố)">Thái Nguyên</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 1.286.751
+        </center></td>
+        <td><center> 3.536,4
+        </center></td>
+        <td><center> 364
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 20
+        </center></td>
+        <td><center> 0208
+        </center></td></tr>
+        <tr>
+        <td><center> 56
+        </center></td>
+        <td><center> <a href="/wiki/Thanh_H%C3%B3a" title="Thanh Hóa">Thanh Hóa</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Thanh_H%C3%B3a_(th%C3%A0nh_ph%E1%BB%91)" title="Thanh Hóa (thành phố)">Thanh Hóa</a>
+        </center></td>
+        <td rowspan="2"><center> <a href="/wiki/B%E1%BA%AFc_Trung_B%E1%BB%99_(Vi%E1%BB%87t_Nam)" class="mw-redirect" title="Bắc Trung Bộ (Việt Nam)">Bắc Trung Bộ</a>
+        </center></td>
+        <td><center> 3.640.128
+        </center></td>
+        <td><center> 11.114,7
+        </center></td>
+        <td><center> 328
+        </center></td>
+        <td><center> 27
+        </center></td>
+        <td><center> 36
+        </center></td>
+        <td><center> 0237
+        </center></td></tr>
+        <tr>
+        <td><center> 57
+        </center></td>
+        <td><center> <a href="/wiki/Th%E1%BB%ABa_Thi%C3%AAn_-_Hu%E1%BA%BF" title="Thừa Thiên - Huế">Thừa Thiên - Huế</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Hu%E1%BA%BF" title="Huế">Huế</a>
+        </center></td>
+        <td><center> 1.128.620
+        </center></td>
+        <td><center> 5.048,2
+        </center></td>
+        <td><center> 224
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 75
+        </center></td>
+        <td><center> 0234
+        </center></td></tr>
+        <tr>
+        <td><center> 58
+        </center></td>
+        <td><center> <a href="/wiki/Ti%E1%BB%81n_Giang" title="Tiền Giang">Tiền Giang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/M%E1%BB%B9_Tho" title="Mỹ Tho">Mỹ Tho</a>
+        </center></td>
+        <td rowspan="2"><center><a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.764.185
+        </center></td>
+        <td><center> 2.510,5
+        </center></td>
+        <td><center> 703
+        </center></td>
+        <td><center> 11
+        </center></td>
+        <td><center> 63
+        </center></td>
+        <td><center> 0273
+        </center></td></tr>
+        <tr>
+        <td><center> 59
+        </center></td>
+        <td><center> <a href="/wiki/Tr%C3%A0_Vinh" title="Trà Vinh">Trà Vinh</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Tr%C3%A0_Vinh_(th%C3%A0nh_ph%E1%BB%91)" title="Trà Vinh (thành phố)">Trà Vinh</a>
+        </center></td>
+        <td><center> 1.009.168
+        </center></td>
+        <td><center> 2.358,2
+        </center></td>
+        <td><center> 428
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 84
+        </center></td>
+        <td><center> 0294
+        </center></td></tr>
+        <tr>
+        <td><center> 60
+        </center></td>
+        <td><center> <a href="/wiki/Tuy%C3%AAn_Quang" title="Tuyên Quang">Tuyên Quang</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Tuy%C3%AAn_Quang_(th%C3%A0nh_ph%E1%BB%91)" title="Tuyên Quang (thành phố)">Tuyên Quang</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_%C4%90%C3%B4ng_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Đông Bắc (Việt Nam)">Đông Bắc Bộ</a>
+        </center></td>
+        <td><center> 784.811
+        </center></td>
+        <td><center> 5.867,9
+        </center></td>
+        <td><center> 134
+        </center></td>
+        <td><center> 7
+        </center></td>
+        <td><center> 22
+        </center></td>
+        <td><center> 0207
+        </center></td></tr>
+        <tr>
+        <td><center> 61
+        </center></td>
+        <td><center> <a href="/wiki/V%C4%A9nh_Long" title="Vĩnh Long">Vĩnh Long</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/V%C4%A9nh_Long_(th%C3%A0nh_ph%E1%BB%91)" title="Vĩnh Long (thành phố)">Vĩnh Long</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long" title="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</a>
+        </center></td>
+        <td><center> 1.022.791
+        </center></td>
+        <td><center> 1.475
+        </center></td>
+        <td><center> 693
+        </center></td>
+        <td><center> 8
+        </center></td>
+        <td><center> 64
+        </center></td>
+        <td><center> 0270
+        </center></td></tr>
+        <tr>
+        <td><center> 62
+        </center></td>
+        <td><center> <a href="/wiki/V%C4%A9nh_Ph%C3%BAc" title="Vĩnh Phúc">Vĩnh Phúc</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/V%C4%A9nh_Y%C3%AAn" title="Vĩnh Yên">Vĩnh Yên</a>
+        </center></td>
+        <td><center> <a href="/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng" title="Đồng bằng sông Hồng">Đồng bằng sông Hồng</a>
+        </center></td>
+        <td><center> 1.154.154
+        </center></td>
+        <td><center> 1.235,2
+        </center></td>
+        <td><center> 934
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 88
+        </center></td>
+        <td><center> 0211
+        </center></td></tr>
+        <tr>
+        <td><center> 63
+        </center></td>
+        <td><center> <a href="/wiki/Y%C3%AAn_B%C3%A1i" title="Yên Bái">Yên Bái</a>
+        </center></td>
+        <td><center> Thành phố <a href="/wiki/Y%C3%AAn_B%C3%A1i_(th%C3%A0nh_ph%E1%BB%91)" title="Yên Bái (thành phố)">Yên Bái</a>
+        </center></td>
+        <td><center> <a href="/wiki/V%C3%B9ng_T%C3%A2y_B%E1%BA%AFc_(Vi%E1%BB%87t_Nam)" title="Vùng Tây Bắc (Việt Nam)">Tây Bắc Bộ</a>
+        </center></td>
+        <td><center> 821.030
+        </center></td>
+        <td><center> 6.887,7
+        </center></td>
+        <td><center> 119
+        </center></td>
+        <td><center> 9
+        </center></td>
+        <td><center> 21
+        </center></td>
+        <td><center> 0216
+        </center></td></tr></tbody><tfoot></tfoot></table>
+
+
+
+    <form action="#" id="form1">
+        <div class="form-group">
+            <select name="country-1">
+                <option value="hanoi">Hà Nội</option>
+                <option value="hcm">Hồ Chí Minh</option>
+                <option value="danang">Đà Nẵng</option>
+            </select>
+        </div>
+    </form>
+
+    <form action="#">
+        <div class="form-group">
+            <select name="country-2">
+                <option value="hanoi-2">Hà Nội - 2</option>
+                <option value="hcm-2">Hồ Chí Minh - 2</option>
+                <option value="danang-2">Đà Nẵng - 2</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+html, body {
+	font-family: 'Pangolin', cursive;
+	background-image: url(https://c.pxhere.com/photos/57/ea/bricks_wall_white_brick_wall_white_white_wall_backdrop_building-675340.jpg!d);
+}
+
+.red-col{
+	background-color: #e4002b; 
+	height: 50px;
+}
+
+.white-col{
+	background-color: white; 
+	height: 50px;
+}
+.zebra{
+	margin-left: 200px; 
+	margin-right: 200px;
+}
+
+.nav-item{
+	font-weight: bold !important;
+}
+
+.navbar-expand .navbar-nav > .active{
+    background-color: black !important;
+    color: white !important;
+}
+
+.navbar-expand li a:hover {
+    background-color: black !important;
+    color: white !important;
+}
+.navbar-expand .navbar-nav > .active > a,
+.navbar-expand .navbar-nav > .active > a:hover,
+.navbar-expand .navbar-nav > .active > a:focus {
+    background-color: black !important;
+    color: white !important;
+}
+
+.deliver-text:hover{
+	background-color: white;
+	transform:translate(5px,-5px);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.padding-all{
+	padding: 10px;
+}
+
+.text-link-sidenav{
+	color: black;
+	font-weight: bold;
+}
+.text-link-sidenav:hover{
+	color: red;
+	text-decoration: none;
+}
+
+.carousel-inner img {
+	width: 100%;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px;
+  border-color: #CD0500;
+  border-style: solid;
+}
+.carousel-indicators .active{
+	background-color: #CD0500;
+}
+
+#navbar {
+  overflow: hidden;
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media (min-width: 992px){
+	.pc{
+		display: flex;
+	}
+}

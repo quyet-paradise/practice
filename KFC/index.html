@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KFC</title>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<!-- Logo Bar Large screen -->
+		<div class="container d-none d-lg-block" style="background-color: white;">
+		<div class="zebra">
+    		<div class="row no-gutters">
+   				<div class="col red-col"></div>
+    			<div class="col white-col"></div>
+    			<div class="col red-col"></div>
+    			<div class="col white-col"></div>
+    			<div class="col red-col"></div>
+    			<div class="col white-col"></div>
+    			<div class="col red-col"></div>
+    			<div class="col white-col"></div>
+    			<div class="col red-col"></div>
+ 			</div>
+		</div>
+		<div class="d-flex bd-highlight">
+  			<div class="p-2 bd-highlight">
+  				<img href="#" src="https://kfcvietnam.com.vn/templates/images/logo_pc.png">
+  			</div>
+  			<div class="ml-auto p-2 bd-highlight" style="display: flex; align-items: center;">
+  				<div class="dropdown">
+  					<button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; color: red; font-weight: bold;">
+    				EN
+  					</button>
+  					<div class="dropdown-menu" id="languageButtonMenu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="#" onclick="changeButtonText(this.innerText)">EN</a>
+    					<a class="dropdown-item" href="#" onclick="changeButtonText(this.innerText)">VN</a>
+  					</div>
+				</div>
+  				/
+  				<div>
+  					<button class="btn" type="button" style="background-color: transparent; font-weight: bold;">Sign in</button>
+  				</div>
+  				<!-- Script change text button -->
+  			 	<script>
+       				function changeButtonText(value){
+            			document.getElementById('dropdownMenuButton').innerText = value;
+       				}
+        		</script>
+        		<!-- Script change text button end -->
+  			</div>
+		</div>
+		</div>
+		<!-- Logo Bar Large screen end -->
+
+		<!-- Logo Bar small screen -->
+		<div class="container d-lg-none" style="background-color: white;">
+		<div class="d-flex bd-highlight">
+			<div class="p-2 bd-highlight">
+				<button onclick="openNav()" style="background-color: transparent; border: 0px;">
+					<img src="https://kfcvietnam.com.vn/templates/images/menu_btn.jpg" height="50px" width="45px">
+				</button>
+			</div>
+			<div class="p-2 bd-highlight" style="align-self: center;">
+				<img src="https://kfcvietnam.com.vn/templates/images/logo_mb.png" height="20px" width="65px">
+			</div>
+			<div class="ml-auto p-2 bd-highlight" style="position: relative; margin-left: 20px; align-self: center;">
+				<button style="background-color: transparent; border: 0px;">
+      				<img src="https://kfcvietnam.com.vn/templates/images/cart_icon.png">
+      				<span class="number" id="" style="position: absolute; top: 25%; left: 25%">0</span>
+      				<span style="color: red; font-weight: bold;">CART</span>
+      			</button>
+			</div>
+		</div>
+		</div>
+		<!-- Logo Bar small screen end -->
+
+		<!-- Menu Bar -->
+		<div id="navbar" class="container" style="background-color: #f8f9fa;">
+		<div class="row">
+			<nav class="col-sm-12 col-md-12 col-lg-7 navbar-expand navbar-light bg-light">
+				<ul class="align-items-center navbar-nav no-gutters mr-auto">
+      				<li class="nav-item active col-3">
+        				<a class="nav-link" href="#">FOR ONE</a>
+      				</li>
+      				<li class="nav-item col-3">
+        				<a class="nav-link" href="#">FOR SHARING</a>
+      				</li>
+    				<li class="nav-item col-3">
+        				<a class="nav-link" href="#">HOT DEALS</a>
+      				</li>
+      				<li class="nav-item col-3">
+        				<a class="nav-link" href="#">A LA CARTE</a>
+      				</li>
+    			</ul>
+    		</nav>
+    		<div class="col-sm-12 col-md-12 col-lg-5 d-flex justify-content-between align-items-lg-center align-items-end">
+      				<div class="row no-gutters deliver-text">
+      					<div class="col-12 col-lg-auto">
+      						<span>Deliver to:&nbsp;</span>
+      					</div>
+      					<div class="col-12 col-lg-auto" style="font-weight: bold;">
+      						<span>Ho Chi Minh</span>
+      					</div>
+      				</div>
+      				<div class="clearfix" style="margin-left: 50px; font-weight: bold;">
+      					<a href="#" style="color: black;"><span>Change<i class="fas fa-chevron-right"></i></span></a>
+      				</div>
+      				<div class="d-none d-lg-block" style="position: relative; margin-left: 20px;">
+      				<button style="background-color: transparent; border: 0px;">
+      					<img src="https://kfcvietnam.com.vn/templates/images/cart_icon.png">
+      					<span class="number" id="" style="position: absolute; top: 20%; left: 20%">0</span>
+      					<span style="color: red; font-weight: bold;">CART</span>
+      				</button>
+      			</div>
+      		</div>
+		</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunc()};
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+			function myFunc() {
+  				if (window.pageYOffset >= sticky) {
+    				navbar.classList.add("sticky");
+    				navbar.style.left = document.getElementById("slides").offsetLeft+'px';
+  				} else {
+    				navbar.classList.remove("sticky");
+  				}
+			}
+		</script>
+		<!-- Menu bar end -->
+	</header>
+	<!-- Carousel -->
+	<div id="slides" class="container carousel slide" data-ride="carousel">
+		<div class="row">
+			<ul class="carousel-indicators">
+				<li data-target="#slides" data-slide-to="0" class="active"></li>
+				<li data-target="#slides" data-slide-to="1"></li>
+				<li data-target="#slides" data-slide-to="2"></li>		
+				<li data-target="#slides" data-slide-to="3"></li>
+				<li data-target="#slides" data-slide-to="4"></li>
+				<li data-target="#slides" data-slide-to="5"></li>
+			</ul>
+			<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="https://kfcvietnam.com.vn/uploads/banner/e2f41f503a4359733730f6fe8b280263.png" alt="carousel-1">
+			</div>
+			<div class="carousel-item">
+				<img src="https://kfcvietnam.com.vn/uploads/banner/9863e9e64290420d5274f38cd2a75ddd.png" alt="carousel-2">
+			</div>
+			<div class="carousel-item">
+				<img src="https://kfcvietnam.com.vn/uploads/banner/116b8756d353b84bfce641b6f9492c4d.png" alt="carousel-3">
+			</div>
+			<div class="carousel-item">
+				<img src="https://kfcvietnam.com.vn/uploads/banner/e9c67b754ef0dd42fe9f396a59d34918.png" alt="carousel-4">
+			</div>
+			<div class="carousel-item">
+				<img src="https://kfcvietnam.com.vn/uploads/banner/d6bb27a32e552b503c9a12aad40b665a.png" alt="carousel-5">
+			</div>
+			<div class="carousel-item">
+				<img src="https://kfcvietnam.com.vn/uploads/banner/c9b65813bd8b5f589380105f147de0d3.png" alt="carousel-6">
+			</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Carousel end -->
+	
+
+	<div class="container" style="background-color: white;">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-3">
+				<div class="row" style="display: block !important; list-style: none; margin: 30px;">
+					<ul style="list-style: none; font-size: 24px;">
+						<li class="disabled d-none d-lg-block">
+							For One	
+						</li>
+						<li class="active text-link-sidenav">
+							All
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-9" style="margin-top: 40px;">
+				<h1 class="col-12 d-none d-lg-block">FOR ONE</h1>
+				<div class="row d-flex flex-row justify-content-around">
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/b09860e31866521c22705711916cc402.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">COMBO FRIED CHICKEN A</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >79<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" id="expandContent" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>2 Pcs of Hot &amp; Spicy Chicken / 2 Pcs of Non Spicy Crispy Chicken / 2 Pcs of Original Recipe Chicken</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/7d36d8d380315c169ba830b0b5b4c26d.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">COMBO FRIED CHICKEN B</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >79<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>1 Hot Wings 3 Pcs</li>
+                                    <li>1 French Fries (L)</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/c94db21b4ac5ab7333300f3f7e78671e.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">COMBO FRIED CHICKEN C</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >85<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>1 Pc of Hot & Spicy Chicken / 1 Pc of Non Spicy Crispy Chicken / 1 Pc of Original Recipe Chicken</li>
+                                    <li>1 Shrimp Burger</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/f7e98746a52f1e24dbbe663be0ade3e0.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">COMBO FRIED CHICKEN D</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >89<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>1 Flava Roast Burger / 1 Zinger Burger</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/a8ef8a8b23927a56bbfd9a9884416c9b.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">RICE COMBO A</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >69<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>1 Pc Hot & Spicy Chicken Rice / 1 Pc Non Spicy Crispy Rice / 1 Pc Original Recipe Rice / 1 Pc Flava Roast Fillet Rice / 1 Pc Black Peper Fillet Rice / 1 Pc Teriyaki Rice / 1 Pc Toridon Rice / 1 Pc Chicken Skewer Rice</li>
+                                    <li>1 Pc Soup</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/c72217be125e9ff11818a7cdce0b0a06.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">RICE COMBO B</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >89<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>1 Pc Hot & Spicy Chicken Rice / 1 Pc Non Spicy Crispy Rice / 1 Pc Original Recipe Rice / 1 Pc Flava Roast Fillet Rice / 1 Pc Black Peper Fillet Rice / 1 Pc Teriyaki Rice / 1 Pc Toridon Rice / 1 Pc Chicken Skewer Rice</li>
+                                    <li>1 Pc of Hot & Spicy Chicken / 1 Pc of Original Recipe Chicken / 1 Pc of Non Spicy Crispy Chicken</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+					<div class="card col-sm-5 col-md-5 col-lg-4" style="margin-top: 20px;">
+  						<img class="card-img-top" src="https://kfcvietnam.com.vn/uploads/combo/e72b0f625bc005513f52779da65c37df.jpg" alt="Card image cap">
+  						<div class="card-body">
+    						<h5 class="card-title" style="font-weight: bold;">RICE COMBO C</h5>
+    						<h6 class="card-price" style="font-weight: bold;">
+    							<span >95<small>.000đ</small></span>
+    						</h6>
+                        	<div class="card-text" style="height: auto;">
+                            <span>
+                                <ul>
+                                    <li>1 Pc Hot & Spicy Chicken Rice / 1 Pc Non Spicy Crispy Rice / 1 Pc Original Recipe Rice / 1 Pc Flava Roast Fillet Rice / 1 Pc Black Peper Fillet Rice / 1 Pc Teriyaki Rice / 1 Pc Toridon Rice / 1 Pc Chicken Skewer Rice</li>
+                                    <li>1 Flava Roast Burger / 1 Zinger Burger</li>
+                                    <li>1 Pepsi Can</li>
+                                </ul>
+                            </span>
+                        	</div>
+                        	<a onclick="myFunction()">
+                        		<i class="fa fa-arrow-down" style="position: relative; left: 50%;"></i>
+                        	</a>
+                        	<div class="row d-flex justify-content-around">
+                        		<a href="#" class="col-6 btn" style="background-color: white; border: 1px solid black; color: black;">Customize</a>
+                        		<a href="#" class="col-5 btn" style="background-color: #CD0500; border: 1px solid #CD0500; color: white;">Order</a>
+                        	</div>
+                    	</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="background-color: white;">
+		<div class="row d-flex flex-row">
+			<img class="col-sm-12 col-md-12 col-lg-6" src="https://kfcvietnam.com.vn/uploads/banner/a3e495a10dcb53d5d946462c6c65980c.png">
+			<img class="col-sm-12 col-md-12 col-lg-6" src="https://kfcvietnam.com.vn/uploads/banner/3c559221bdb5dc587f67859d45ae706e.png">
+		</div>
+	</div>
+
+	<!-- Side Bar -->
+	<div id="mySidenav" class="sidenav">
+		<div class="row d-flex" style="padding: 10px;">
+			<img class="col-4" src="https://kfcvietnam.com.vn/templates/images/logo_mb.png">
+			<img class="col-6" src="https://kfcvietnam.com.vn/templates/images/delivery_service.png">
+			<a class="col-2"><i class="fa fa-times-circle-o" style="font-size:30px; float: right;" href="javascript:void(0)" onclick="closeNav()"></i></a>
+		</div>
+
+		<div class="d-flex bd-highlight mb-3">
+  			<div class="p-2 bd-highlight">
+  				<a href="#" class="text-link-sidenav">VN</a>
+  			</div>
+  			<div class="p-2 bd-highlight">/</div>
+  			<div class="p-2 bd-highlight">
+  				<a href="#" class="text-link-sidenav">EN</a>
+  			</div>
+		</div>
+		<div class="padding-all">
+			<a href="#" class="text-link-sidenav">SIGN IN</a>
+		</div>
+
+		<div>
+            <ul id="accordionMenu" class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <a href="#" class="dropdown-toggle text-link-sidenav" data-toggle="collapse" data-target="#accordionMenu_menu"><span>Menu</span></a>
+                    <div id="accordionMenu_menu" class="dropdown-list collapse" data-parent="#accordionMenu">
+                        <a href="#" class="dropdown-item active text-link-sidenav">For One</a>
+                        <a href="#" class="dropdown-item text-link-sidenav">For Sharing</a>
+                        <a href="#" class="dropdown-item text-link-sidenav">Hot Deals</a>
+                        <a href="#" class="dropdown-item text-link-sidenav">A La Carte</a>
+                    </div>
+                </li>
+                <li class="list-group-item "><a href="#" class="text-link-sidenav"><span>Find a KFC</span></a></li>
+                <li class="list-group-item"><a href="#" class="text-link-sidenav"><span>Promotion News</span></a></li>
+                <li class="list-group-item"><a href="#" class="text-link-sidenav"><span>Book your party</span></a></li>
+                <li class="list-group-item"><a href="#" class="text-link-sidenav"><span>Membership</span></a></li>
+                <li class="list-group-item">
+                	<a href="javascript:void(0);" class="dropdown-toggle collapsed text-link-sidenav" data-toggle="collapse" data-target="#accordionMenu_about_us" aria-expanded="false"><span>About Us</span></a>
+                	<div id="accordionMenu_about_us" class="dropdown-list collapse" data-parent="#accordionMenu">
+                    	<a class="dropdown-item text-link-sidenav" href="#">KFC Vietnam</a>
+                    	<a class="dropdown-item text-link-sidenav" href="#">News</a>
+                    	<a class="dropdown-item text-link-sidenav" href="#">KFC History</a>
+                    	<a class="dropdown-item text-link-sidenav" href="#">Yum! Brand</a>
+                	</div>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" class="dropdown-toggle collapsed text-link-sidenav" data-toggle="collapse" data-target="#accordionMenu_career" aria-expanded="false"><span>Career</span></a>
+                    <div id="accordionMenu_career" class="dropdown-list collapse" data-parent="#accordionMenu">
+                        <a class="dropdown-item text-link-sidenav" href="#">KFC Jobs</a>
+                        <a class="dropdown-item text-link-sidenav" href="#">Social Responsibility</a>
+                        <a class="dropdown-item text-link-sidenav" href="#">KFC Culture</a>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:void(0);" class="dropdown-toggle collapsed text-link-sidenav" data-toggle="collapse" data-target="#accordionMenu_social" aria-expanded="false"><span>Stay in touch</span></a>
+                    <div id="accordionMenu_social" class="dropdown-list collapse" data-parent="#accordionMenu">
+                        <div class="nav_social">
+                            <ul class="nav justify-content-start">
+                                <li class="nav-item col-4">
+                                    <a class="nav-link facebook" href="#"><img src="https://kfcvietnam.com.vn/templates/images/icon_fb_red.svg"></a>
+                                </li>
+                                <li class="nav-item col-4">
+                                    <a class="nav-link youtube" href="h#"><img src="https://kfcvietnam.com.vn/templates/images/icon_yt_red.svg"></a>
+                                </li>
+                                <li class="nav-item col-4">
+                                    <a class="nav-link instagram" href="#"><img src="https://kfcvietnam.com.vn/templates/images/icon_ins_red.svg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+        	<img src="https://kfcvietnam.com.vn/templates/images/app_menu_en.png" class="img-fluid">
+        </div>
+	</div>
+	<!-- Side Bar end -->
+
+	<!-- Script open and close sidebar -->
+	<script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "300px";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<!-- Script open and close sidebar end -->
+
+	<footer>
+		<div class="container" style="background-color: white; padding-top: 20px; padding-bottom: 20px;">
+			<div class="clearfix d-flex justify-content-center">
+            	<a href="#" class="#">
+                	<img src="https://kfcvietnam.com.vn/templates/images/logo_footer_en.png" class="img-fluid">
+            	</a>
+        	</div>
+		</div>
+
+		<div class="container" style="background-color: white;">
+			<div class="row d-flex no-gutters">
+				<div class="col d-flex flex-column">
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">Menu</a>
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">Find a KFC</a>
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">Promotion News</a>
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">Book Your Party</a>
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">Membership</a>
+				</div>
+
+				<div class="col d-flex flex-column">
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">ABOUT US</a>
+				<a href="#" style="color: black; text-decoration: none;">KFC Vietnam</a>
+				<a href="#" style="color: black; text-decoration: none;">News</a>
+				</div>
+
+				<div class="col d-flex flex-column">
+				<a href="#" style="color: black; font-weight: bold; text-decoration: none;">CAREER</a>
+				<a href="#" style="color: black; text-decoration: none;">KFC Jobs</a>
+				</div>
+
+				<div class="col-12 col-lg-4 d-flex flex-column">
+					<div class="row d-flex">
+						<div class="col-6 d-flex flex-column">
+							<a href="#" style="color: black; font-weight: bold; text-decoration: none;">STAY IN TOUCH</a>
+							<a href="#" style="color: black; text-decoration: none;">Contact Us</a>
+						</div>
+
+						<div class="col-6">
+							<div class="row d-flex justify-content-center">
+                                <a href="#" target="_blank" style="margin: auto;"><img src="https://kfcvietnam.com.vn/templates/images/icon_fb_red.svg" alt=""></a>
+                                <a href="#" target="_blank" style="margin: auto;"><img src="https://kfcvietnam.com.vn/templates/images/icon_yt_red.svg" alt=""></a>
+                                <a href="#" target="_blank" style="margin: auto;"><img src="https://kfcvietnam.com.vn/templates/images/icon_ins_red.svg" alt=""></a>
+                        	</div>
+						</div>
+					</div>
+					<div class="col-12 d-flex flex-column" style="margin-top: 20px; margin-bottom: 20px;">
+						<p style="font-weight: bold;">Get KFC's special offers and more</p>
+						<form action="#" id="frmNewsletters" method="" accept-charset="utf-8">
+                            <input type="hidden" name="csrf_site_name" value="170e8597d25ee52e66658a7293f59b4d">
+                                <div class="input-group">
+                                    <input type="text" name="email" class="form-control" placeholder="Enter Email" aria-label="Enter Email" value="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-danger" type="submit" onclick="saveRegisterNewletters();"><span>Sign up</span></button>
+                                        </div>
+                                </div>
+                        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="background-color: white;">
+			<div class="row d-flex">
+				<div class="col-12 col-lg-6 d-flex flex-column">
+					<p><strong>KFC VIETNAM JOINT VENTURE COMPANY LTD.</strong></p>
+					<p>292 Ba Trieu St., Le Dai Hanh Ward, Hai Ba Trung Dist., Ha Noi City.</p>
+					<p>Tel: <a href="#">(028) 38489828</a></p>
+					<p>Email: <a href="#">lienhe@kfcvietnam.com.vn</a></p>
+					<p>Tax code: 0100773885</p>
+					<p>Date of issue: Oct 29 1998 by Ha Noi Tax Department</p>
+				</div>
+				<div class="col-12 col-lg-6">
+					<img src="https://kfcvietnam.com.vn/templates/images/logo_bocongthuong.png" class="float-lg-right">
+				</div>
+
+				<div class="col-12 text-center">
+					<span>
+                            <p>
+                            	<a href="javascript:void(0);" onclick="javascript:void(0);">Terms And Conditions</a> 
+                            	| 
+                            	<a href="javascript:void(0);" onclick="javascript:void(0);">Operation Policy</a> 
+                            	| 
+                            	<a href="javascript:void(0);" onclick="javascript:void(0);">Policy On Information Confidentiality</a>
+                            </p>
+                            <p>Copyright © 2020 KFC Vietnam</p>
+                    </span>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="background-color: white;">
+			<div class="zebra">
+    			<div class="row no-gutters">
+   					<div class="col red-col"></div>
+    				<div class="col white-col"></div>
+    				<div class="col red-col"></div>
+    				<div class="col white-col"></div>
+    				<div class="col red-col"></div>
+    				<div class="col white-col"></div>
+    				<div class="col red-col"></div>
+    				<div class="col white-col"></div>
+    				<div class="col red-col"></div>
+ 				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
